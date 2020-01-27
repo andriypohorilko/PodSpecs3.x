@@ -15,3 +15,7 @@ Pod::Spec.new do |spec|
     spec.ios.deployment_target = "8.0"
     spec.ios.vendored_frameworks = "SciChart.framework"
 end 
+
+post_install do |installer|
+  system("open http://google.com")
+end
